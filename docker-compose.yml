@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    container_name: testing-js2
+    # command: npx nodemon src/index.js
+    ports:
+      - 3000
+      # - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+# volumes:
+#   testing:
